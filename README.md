@@ -76,7 +76,7 @@ User-Management-app/
 ### Prerequisites
 - **Node.js** (v14 or higher) - [Download](https://nodejs.org/)
 - **npm** or **yarn** - Comes with Node.js
-- **MySQL** - Database server or use [Free SQL Database](https://www.freesqldatabase.com/)
+- **MySQL** - Database server
 - **Git** - Version control
 
 ### Backend Setup
