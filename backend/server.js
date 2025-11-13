@@ -8,12 +8,12 @@ import userRouter from "./routes/userRoutes.js"
 
 const app = express()
 const port = process.env.PORT || 5000
-const allowedOrigin = process.env.ORIGIN
+const allowedOrigin = process.env.ORIGIN || 'https://user-management-app-woad-iota.vercel.app'
 
 // Middlewares
 app.use(express.json())
 app.use(cors({
-    origin: [allowedOrigin],
+    origin: allowedOrigin,
     credentials: true // backend allows cookies to be sent
 }))
 
