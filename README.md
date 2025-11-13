@@ -15,7 +15,7 @@ This is a comprehensive user management application that demonstrates a complete
 ### Backend
 - **Node.js** - JavaScript runtime
 - **Express.js** - Web framework for building REST APIs
-- **MySQL** - Relational database (hosted on [Free SQL Database](https://www.freesqldatabase.com/))
+- **MySQL** - Relational database
 
 - **CORS** - Cross-Origin Resource Sharing for frontend-backend communication
 
