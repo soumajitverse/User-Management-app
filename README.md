@@ -28,7 +28,7 @@ This is a comprehensive user management application that demonstrates a complete
 ### Deployment
 - **Render** - Backend hosting (Node.js/Express.js server)
 - **Vercel** - Frontend hosting (React application)
-- **Free SQL Database** - Database hosting
+- **Aivon** - Database hosting
 
 ## ✨ Features
 
@@ -109,6 +109,7 @@ User-Management-app/
 
    # Server Configuration
    PORT=5000
+   ORIGIN = add the local host vite url
 
 
 
@@ -132,8 +133,6 @@ User-Management-app/
 6. **Start the backend server**
    ```bash
    npm run dev
-   # or for production
-   npm start
    ```
 
    The backend server will run on `http://localhost:5000`
@@ -152,7 +151,7 @@ User-Management-app/
 
 3. **Create environment variables file** (`.env` file)
    ```
-   REACT_APP_API_URL=http://localhost:5000
+   VITE_BACKEND_URL=http://localhost:5000
    ```
 
 4. **Start the development server**
@@ -160,7 +159,7 @@ User-Management-app/
    npm start
    ```
 
-   The frontend will run on `http://localhost:3000`
+   The frontend will run on `http://localhost:5173`
 
 ## 📦 Dependencies
 
@@ -232,14 +231,6 @@ User-Management-app/
 2. Confirm the deletion
 3. User will be removed from the system
 
-## 🔒 Security Features
-
-- **Password Hashing**: Bcrypt with salt rounds for secure password storage
-- **JWT Authentication**: Token-based authentication for API requests
-- **CORS Protection**: Controlled cross-origin requests
-- **Input Validation**: Both client and server-side validation
-- **SQL Injection Prevention**: Parameterized queries
-
 ## 🐛 Troubleshooting
 
 ### Backend Connection Issues
@@ -270,26 +261,15 @@ DB_PASSWORD=password123
 DB_NAME=user_management_db
 DB_PORT=3306
 PORT=5000
-NODE_ENV=development
 JWT_SECRET=your_super_secret_key
 JWT_EXPIRE=7d
-CORS_ORIGIN=http://localhost:3000
+CORS_ORIGIN=http://localhost:5173
 ```
 
 **Frontend (.env)**
 ```
-REACT_APP_API_URL=http://localhost:5000
+VITE_BACKEND_URL=http://localhost:5000
 ```
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📄 License
 
@@ -299,14 +279,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **Soumajit Verse**
 - GitHub: [@soumajitverse](https://github.com/soumajitverse)
-- Email: Your email here
-
-## 📞 Support
-
-For issues, questions, or suggestions, please:
-- Open an issue on GitHub
-- Check existing documentation
-- Review API endpoint documentation
+- Email: majumdersoumajit09@gmail.com
 
 ## 🔗 Live Links
 
@@ -317,5 +290,3 @@ For issues, questions, or suggestions, please:
 ---
 
 **Last Updated**: November 2025
-
-Happy coding! 🚀
